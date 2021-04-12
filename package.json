@@ -50,12 +50,6 @@
         "typescript": "^4.2.4",
         "husky": "^6.0.0"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "yarn lint",
-            "pre-push": "yarn lint"
-        }
-    },
     "repository": {
         "type": "git",
         "url": "https://github.com/jvhellemondt/gatsby-starter-jvh.git"
