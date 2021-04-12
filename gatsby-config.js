@@ -5,17 +5,26 @@ module.exports = {
     author: `@jvhellemondt`
   },
   plugins: [
+    "gatsby-plugin-sass",
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/images`
-      }
+        name: "images",
+        path: "./src/images/",
+      },
+      __key: "images",
     },
-    `gatsby-transformer-sharp`,
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "",
+      },
+    },
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -32,7 +41,6 @@ module.exports = {
     },
     `gatsby-plugin-gatsby-cloud`,
     // @TODO: enable PWA - https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-    `gatsby-plugin-typescript`
+    // `gatsby-plugin-offline`
   ]
 }
