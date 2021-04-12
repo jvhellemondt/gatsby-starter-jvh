@@ -3,23 +3,23 @@ import { Helmet } from 'react-helmet'
 import { graphql, useStaticQuery } from 'gatsby'
 
 interface ISEOProps {
-  description?: string,
-  lang?: string,
-  meta?: Array<{ name: string, content: string }>,
+  description?: string
+  lang?: string
+  meta?: Array<{ name: string; content: string }>
   title: string
 }
 
 interface ISite {
   site: {
     siteMetadata: {
-      title: string,
-      description: string,
+      title: string
+      description: string
       author: string
     }
   }
 }
 
-function SEO({ description = '', lang = 'nl', meta = [], title }: ISEOProps) {
+function SEO({ description = '', lang = 'nl', meta = [], title }: ISEOProps): React.ReactElement {
   const { site }: ISite = useStaticQuery(
     graphql`
       query {

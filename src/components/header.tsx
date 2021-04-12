@@ -5,7 +5,7 @@ interface IHeaderProps {
   siteTitle: string
 }
 
-const Header = ({ siteTitle }: IHeaderProps) => (
+const Header = ({ siteTitle }: IHeaderProps): React.ReactElement => (
   <header
     style={{
       background: `rebeccapurple`,
@@ -21,7 +21,7 @@ const Header = ({ siteTitle }: IHeaderProps) => (
     >
       <h1 style={{ margin: 0 }}>
         <Link
-          to='/'
+          to="/"
           style={{
             color: `white`,
             textDecoration: `none`

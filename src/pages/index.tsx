@@ -1,11 +1,11 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from 'react'
+import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 
-import Layout from "../components/templates/layout"
-import Seo from "../components/seo"
+import Layout from '../components/templates/layout'
+import Seo from '../components/seo'
 
-const IndexPage = () => (
+const IndexPage = (): React.ReactElement => (
   <Layout>
     <Seo title="Home" />
     <h1>Hi people</h1>

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `gatsby-starter-jvh`,
     description: `gatsby-starter-jvh.`,
-    author: `@jvhellemondt`,
+    author: `@jvhellemondt`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,8 +11,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/assets/images`,
-      },
+        path: `${__dirname}/src/assets/images`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -27,12 +27,12 @@ module.exports = {
         display: `minimal-ui`,
         // @TODO: remove once there is a favicon
         include_favicon: false,
-        icon: `./src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+        icon: `./src/assets/images/gatsby-icon.png` // This path is relative to the root of the site.
+      }
     },
     `gatsby-plugin-gatsby-cloud`,
     // @TODO: enable PWA - https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    `gatsby-plugin-typescript`,
-  ],
+    `gatsby-plugin-typescript`
+  ]
 }
